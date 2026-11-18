@@ -1,0 +1,14 @@
+{
+  "name": "debian-en-practica",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node scripts/serve.js",
+    "test": "node --test test/model.test.js"
+  },
+  "dependencies": {
+    "gsap": "3.13.0"
+  }
+}

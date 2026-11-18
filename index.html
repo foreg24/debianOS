@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b090c">
+  <meta name="description" content="Proyecto integrador de Sistemas Operativos. Un laboratorio Debian con prácticas interactivas y evidencias originales.">
+  <title>Debian en práctica · Sistemas Operativos</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./vendor/gsap.min.js"></script>
+  <script defer src="./vendor/ScrollTrigger.min.js"></script>
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="identity" href="#exposicion/apertura">
+      <img class="brand-logo" src="./assets/debian.png" alt="">
+      <span><strong>Debian <em>en práctica</em></strong><small>Sistemas Operativos · USCO</small></span>
+    </a>
+    <nav class="tabs" aria-label="Navegación principal"><a href="#exposicion/apertura">Exposición</a><a href="#exposicion/sistema">Prácticas</a><button class="nav-source" data-action="section-sources">Evidencias</button></nav>
+    <aside class="rail" aria-label="Índice de la exposición"></aside>
+    <button type="button" class="project-button" data-action="fullscreen" aria-pressed="false"><span aria-hidden="true">⛶</span> <span data-fullscreen-label>Proyectar</span></button>
+  </header>
+  <div class="layout">
+    <div class="body">
+      <main id="main" tabindex="-1"></main>
+    </div>
+  </div>
+  <dialog id="overlay" aria-labelledby="overlay-title"></dialog>
+  <div class="sr-only" id="announce" role="status" aria-live="polite"></div>
+  <noscript>Activa JavaScript para usar la exposición. <a href="./assets/informe.pdf">Abrir el informe original</a>.</noscript>
+</body>
+</html>
